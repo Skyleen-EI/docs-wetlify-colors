@@ -43,13 +43,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          lastVersion: 'current',
-          versions: {
-            current: {
-              label: '0.3.0',
-              path: '0.3.0',
-            },
-          },
         },
         blog: {
           showReadingTime: true,
@@ -126,7 +119,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Documentation',
                 to: '/docs/intro',
               },
             ],
@@ -162,7 +155,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Skyleen.`,
       },
       prism: {
         theme: lightCodeTheme,
