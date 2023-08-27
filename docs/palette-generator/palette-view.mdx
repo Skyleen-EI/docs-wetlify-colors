@@ -1,0 +1,244 @@
+---
+sidebar_position: 2
+---
+
+import {
+  XMarkIcon,
+  LockOpenIcon,
+  EyeDropperIcon,
+  TableCellsIcon,
+  HeartIcon,
+} from '@heroicons/react/24/outline';
+
+# Palette View
+
+This is the view of your palette. This view is simple but also very complete.
+
+## Move a color
+
+Each color in the palette has a Move button to modify its position in the palette by dragging and dropping to the desired location.
+
+<img
+  alt="Color move button"
+  src="/img/palette-creator/move-btn.png"
+  style={{
+    width: '100%',
+    maxWidth: '300px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+  }}
+/>
+
+## Color information
+
+Each color in the palette has a primary information, which is the color in hex format, and a secondary information, which is the color name _(which is editable in the tool settings)_.
+
+<img
+  alt="Color information"
+  src="/img/palette-creator/color-infos.png"
+  style={{
+    width: '100%',
+    maxWidth: '200px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginBottom: '0.5rem',
+  }}
+/>
+
+You can click on the information you want to copy to your clipboard.
+
+## Color actions
+
+To display the color actions, you need to hover the color in the palette.
+
+Each color in the palette has a set of actions that can be performed on it.
+
+<img
+  alt="Color actions"
+  src="/img/palette-creator/color-menu.png"
+  style={{
+    width: '100%',
+    maxWidth: '80px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+  }}
+/>
+
+### Delete color
+
+<p
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+  }}
+>
+  The color delete button is represented by the icon
+  <XMarkIcon
+    style={{
+      width: '1.45rem',
+      marginLeft: '0.25rem',
+    }}
+  />.
+</p>
+
+This action will delete the color from the palette.
+
+### Lock color
+
+<p
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+  }}
+>
+  The color lock button is represented by the icon
+  <LockOpenIcon
+    style={{
+      width: '1.25rem',
+      marginLeft: '0.5rem',
+    }}
+  />.
+</p>
+
+This action will lock the color in the palette. This means that the color will not be affected by the random color generation.
+
+### Pick color
+
+<p
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+  }}
+>
+  The color picker button is represented by the icon
+  <EyeDropperIcon
+    style={{
+      width: '1.25rem',
+      marginLeft: '0.35rem',
+    }}
+  />.
+</p>
+
+This action will open the color picker to change the color.
+
+<img
+  alt="Color Picker"
+  src="/img/palette-creator/color-picker.png"
+  style={{
+    width: '100%',
+    maxWidth: '200px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+  }}
+/>
+
+### Shades, Tints and Tones
+
+<p
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+  }}
+>
+  The button is represented by the icon
+  <TableCellsIcon
+    style={{
+      width: '1.25rem',
+      marginLeft: '0.35rem',
+    }}
+  />.
+</p>
+
+In color theory, a **tint** is a mixture of a color with white, which increases lightness, while a **shade** is a mixture with black, which increases darkness. Both processes affect the resulting color mixture's relative saturation. A **tone** is produced either by mixing a color with gray, or by both tinting and shading.
+
+<div
+  style={{
+    display: 'flex',
+  }}
+>
+<img
+  alt="Color Shades"
+  src="/img/palette-creator/color-shades.png"
+  style={{
+    width: '100%',
+    maxWidth: '120px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+  }}
+/>
+
+<img
+  alt="Color Tints"
+  src="/img/palette-creator/color-tints.png"
+  style={{
+    width: '100%',
+    maxWidth: '120px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginLeft: '1.5rem',
+  }}
+/>
+
+<img
+  alt="Color Tones"
+  src="/img/palette-creator/color-tones.png"
+  style={{
+    width: '100%',
+    maxWidth: '120px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginLeft: '1.5rem',
+  }}
+/>
+</div>
+
+### Save color _(need to be logged in)_
+
+<p
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+  }}
+>
+  The save color button is represented by the icon
+  <HeartIcon
+    style={{
+      width: '1.25rem',
+      marginLeft: '0.35rem',
+    }}
+  />.
+</p>
+
+This action will save the color in your project.
+
+<img
+  alt="Save Color"
+  src="/img/palette-creator/save-color.png"
+  style={{
+    width: '100%',
+    maxWidth: '250px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginBottom: '0.5rem',
+  }}
+/>
+
+You can access your saved colors in your dashboard.
+
+## Add new color
+
+Passing the mouse between two colors you will see a plus button appear allowing you to create 1 or more colors which will be a mix between the two colors.
+
+<img
+  alt="Add Color"
+  src="/img/palette-creator/color-add.png"
+  style={{
+    width: '100%',
+    maxWidth: '50px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginBottom: '0.5rem',
+  }}
+/>
+
+For colors located at the ends of the palette, you will see the plus button appear hovering the end of the color. This button works the same way except that it will not create a color mix, but shades of your color.

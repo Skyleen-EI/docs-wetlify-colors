@@ -1,0 +1,282 @@
+---
+sidebar_position: 4
+---
+
+import { BsTextarea, BsTextareaT } from 'react-icons/bs';
+
+# Action bar
+
+The action bar is composed of the following elements:
+
+- **Accessibility**: Look at the different renderings of your palettes according to the different color blind views
+
+- **Information**: Get information about each color in your palette
+
+- **Contrast**: Look at the contrast between the different colors of your palette according to WCAG standards
+
+- **Adjust**: Change the hue, saturation, brightness and temperature of your palette
+
+- **ColorAI**: Speak with an artificial intelligence specialized in colors and the creation of color palettes
+
+- **Settings**: Customize your palette creator tool
+
+## Accessibility
+
+The accessibility view allows you to see your palette according to the different color blind views : Protanomaly, Protanopia, Deuteranomaly, Deuteranopia, Tritanomaly, Tritanopia, Achromatomaly and Achromatopsia.
+
+<img
+  alt="Accessibility view"
+  src="/img/palette-creator/action-bar/accessibility.png"
+  style={{
+    width: '100%',
+    maxWidth: '600px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+  }}
+/>
+
+## Information
+
+The information view allows you to see the information of each color in your palette : Name, HEX, RGB, HSL, HSV, HWB, HCG, HCL, HSI, CMYK, OKLAB, LAB, OKLCH, LCH, GL, XYZ, APPLE, ANSI16, ANSI256, KELVIN, Meaning of the color.
+
+<img
+  alt="Information view"
+  src="/img/palette-creator/action-bar/information.png"
+  style={{
+    width: '100%',
+    maxWidth: '600px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginBottom: '0.5rem',
+  }}
+/>
+
+Click on the color you want to see the information for.
+
+Click on the information you want to copy to your clipboard.
+
+## Contrast
+
+:::info
+
+To check the color contrast, you will find that AA vs AAA labels appear frequently. These are the different conformance levels for contrast checking based on WCAG 2.0 accessibility standards.
+
+Level AA requires a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text, and a contrast ratio of at least 3:1 for graphics and UI components (such as form input borders). Level AAA requires a contrast ratio of at least 7:1 for normal text and 4.5:1 for large text.
+
+Double A (AA) compliance is the acceptable level of accessibility for many online services and should work with most assistive technologies.
+
+Triple A (AAA) is the accessibility benchmark, which provides everything for full accessible compliance, which makes the difference between a pretty good experience and a great one that anyone can use.
+
+:::
+
+The contrast view allows you to see the contrast between the different colors of your palette according to WCAG standards : AA, AAA, AA Large, AAA Large.
+
+<img
+  alt="Contrast view"
+  src="/img/palette-creator/action-bar/contrast.png"
+  style={{
+    width: '100%',
+    maxWidth: '600px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginBottom: '0.5rem',
+  }}
+/>
+
+Hover over the color you want to display the buttons with to apply it to the background or text.
+
+<p
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+  }}
+>
+  The button to apply the color to the background is represented by the icon
+  <BsTextarea
+    style={{
+      width: '1.25rem',
+      marginLeft: '0.35rem',
+    }}
+  />.
+</p>
+
+<p
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+  }}
+>
+  The button to apply the color to the text is represented by the icon
+  <BsTextareaT
+    style={{
+      width: '1.25rem',
+      marginLeft: '0.35rem',
+    }}
+  />.
+</p>
+
+When the button is applied on the color, the icon appear in the color.
+
+You can edit the background and text colors by clicking on the color in each input. You can improve it by clicking on the **Improve** button.
+
+You can apply changes to background and text colors by clicking the **Apply** button of what you want to apply (text or background represented by their icons).
+
+#### Contrast table
+
+You can open the contrast table by clicking on the **Contrast table** button.
+
+<img
+  alt="Contrast table view"
+  src="/img/palette-creator/action-bar/contrast-table.png"
+  style={{
+    width: '100%',
+    maxWidth: '350px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginBottom: '0.5rem',
+  }}
+/>
+
+You can select the WCAG standard you want to apply to the contrast table.
+
+Contrasts that do not respect the selected standard will be crossed out.
+
+Click on the contrast you want to apply it.
+
+View all ratios and contrast preview of selected colors.
+
+## Adjust
+
+The adjust view allows you to change the hue _(between -180 and 180)_, saturation _(between -100 and 100)_, brightness _(between -100 and 100)_ and temperature _(between -100 and 100)_ of your palette.
+
+<img
+  alt="Adjust view"
+  src="/img/palette-creator/action-bar/adjust.png"
+  style={{
+    width: '100%',
+    maxWidth: '600px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginBottom: '0.5rem',
+  }}
+/>
+
+You can adjust your palette with the sliders and apply the changes by clicking on **Apply** or cancel by clicking on **Cancel**.
+
+## ColorAI _(Premium feature)_
+
+**You need to be a premium member to use this feature.**
+
+The ColorAI view allows you to speak with an artificial intelligence specialized in colors and the creation of color palettes.
+
+<img
+  alt="ColorAI view"
+  src="/img/palette-creator/action-bar/colorAI.png"
+  style={{
+    width: '100%',
+    maxWidth: '600px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginBottom: '0.5rem',
+  }}
+/>
+
+When you click on the **ColorAI** button on the action bar you will see all your chats. _(Saved chats are linked to your project)_.
+
+To start a new conversation with ColorAI, click on the **New chat** button.
+
+In a conversation, you can click on the proposed texts or write your own request.
+
+ColorAI can offer you palettes, click on the **Apply** button to apply the proposed palette.
+
+## Settings
+
+The settings view allows you to customize your palette creator tool.
+
+<img
+  alt="Settings view"
+  src="/img/palette-creator/action-bar/settings.png"
+  style={{
+    width: '100%',
+    maxWidth: '600px',
+    borderRadius: '5px',
+    boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+    marginBottom: '0.5rem',
+  }}
+/>
+
+### Template
+
+This is the view of your tool, you have 3 available:
+
+- **Full**
+
+  <img
+    alt="Full template view"
+    src="/img/palette-creator/action-bar/full-template.png"
+    style={{
+      width: '100%',
+      maxWidth: '600px',
+      borderRadius: '5px',
+      boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+      marginBottom: '0.5rem',
+    }}
+  />
+
+- **Padding**
+
+  <img
+    alt="Padding template view"
+    src="/img/palette-creator/action-bar/padding-template.png"
+    style={{
+      width: '100%',
+      maxWidth: '600px',
+      borderRadius: '5px',
+      boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+      marginBottom: '0.5rem',
+    }}
+  />
+
+- **Rounded**
+
+  <img
+    alt="Rounded template view"
+    src="/img/palette-creator/action-bar/rounded-template.png"
+    style={{
+      width: '100%',
+      maxWidth: '600px',
+      borderRadius: '5px',
+      boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+      marginBottom: '0.5rem',
+    }}
+  />
+
+### Generate method
+
+This is the method used to generate palette, you have 8 available:
+
+- **Random**: A random palette is a selection of colors generated randomly.
+
+- **Random method**: Generate a palette with a random method between all the methods available.
+
+- **Monochromatic**: A monochromatic color palette is a selection of colors derived from a base hue. These colors share the same hue, but they vary in brightness, saturation, or intensity.
+
+- **Analogous**: An analogous color palette is a selection of colors that lie close to each other on the color wheel.
+
+- **Triadic**: A triadic color palette is a selection of three colors equidistant from each other on the color wheel.
+
+- **Tetradic**: A tetradic colormap, also known as a quadratic colormap, is a selection of four colors that form two complementary color pairs.
+
+- **Split complementary**: A split complementary color palette is a selection of three colors. It starts with a base color, to which we add the two colors that are on either side of the complementary color of the base color on the chromatic circle.
+
+- **Complementary**: A complementary color palette is a selection of two colors that are opposite each other on the color wheel.
+
+:::info
+
+The color wheel is a circular representation of colors, where the primary and secondary colors are arranged to show their relationships to each other.
+
+:::
+
+### Primary and secondary information
+
+This is the information of the primary and secondary colors of your palette. You can choose between: **Name**, **HEX**, **RGB**, **HSL**, **HSV**, **HWB**, **HCG**, **LCH**, **LAB**, **CMYK** and **XYZ**.

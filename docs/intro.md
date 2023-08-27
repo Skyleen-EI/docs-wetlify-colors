@@ -26,7 +26,7 @@ Your password must be at least 8 characters long and contain at least one upperc
 
 :::
 
-### Verify your email address (only if you registered with an email address)
+### Verify your email address _(only if you registered with credentials)_
 
 After registering, you will receive an email asking you to verify your email address (check your spam folder). Click on the **Verify my email address** button.
 
