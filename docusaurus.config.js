@@ -103,12 +103,6 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {
-            type: 'docsVersionDropdown',
-            sidebarId: 'versionSidebar',
-            position: 'right',
-          },
-
           // { to: '/blog', label: 'Blog', position: 'left' },
         ],
       },
