@@ -18,7 +18,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to={`/docs/${siteConfig.presets[0][1].docs.versions.current.path}/intro`}
+            to={`/docs/intro`}
           >
             Documentation
           </Link>

@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Create your palettes and colors',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/pencil-icon.svg').default,
     description: (
       <>
         Design your color palettes easily with our palette builder tool. Use our
@@ -20,22 +20,22 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Explore thousands of palettes',
+    Svg: require('@site/static/img/swatch-icon.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Explore color palettes created by the greatest artists but also the
+        color palettes of the biggest brands.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Save them in projects',
+    Svg: require('@site/static/img/cloud-icon.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Save your color palettes and colors in different projects to easily
+        categorize and find them.
       </>
     ),
   },

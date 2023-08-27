@@ -108,6 +108,12 @@ const config = {
       },
       footer: {
         style: 'dark',
+        logo: {
+          alt: 'Wetlify Colors Logo',
+          src: 'img/logo_white.png',
+          href: 'https://colors.wetlify.com',
+          height: 51,
+        },
         links: [
           {
             title: 'Docs',
