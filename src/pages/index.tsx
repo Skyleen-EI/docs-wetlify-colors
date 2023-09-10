@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -11,13 +11,40 @@ import { siteURL } from '@site/constants';
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
 
+  const [isDarkMode, setIsDarkMode] = useState(
+    () => document.documentElement.getAttribute('data-theme') === 'dark',
+  );
+
+  useEffect(() => {
+    const handleThemeChange = (mutationsList) => {
+      for (let mutation of mutationsList) {
+        if (
+          mutation.type === 'attributes' &&
+          mutation.attributeName === 'data-theme'
+        ) {
+          setIsDarkMode(mutation.target.getAttribute('data-theme') === 'dark');
+        }
+      }
+    };
+
+    const observer = new MutationObserver(handleThemeChange);
+    observer.observe(document.documentElement, { attributes: true });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <header className={clsx('hero', styles.heroBanner)}>
+    <header
+      className={clsx('hero', styles.heroBanner)}
+      style={{
+        backgroundColor: isDarkMode ? '#303846' : '#f9fafb',
+      }}
+    >
       <div className="container">
         <h1
           className="hero__title"
           style={{
-            color: 'black',
+            color: isDarkMode ? 'white' : 'black',
           }}
         >
           {siteConfig.title}
@@ -25,7 +52,7 @@ function HomepageHeader() {
         <p
           className="hero__subtitle"
           style={{
-            color: '#666',
+            color: isDarkMode ? '#cbd5e0' : '#666',
           }}
         >
           {siteConfig.tagline}
@@ -33,6 +60,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <a
             className="button button--primary button--lg"
+            style={{
+              color: 'white',
+            }}
             href={siteURL}
             target="_blank"
           >
