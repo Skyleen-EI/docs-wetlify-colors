@@ -41,15 +41,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/Skyleen-EI/docs-wetlify-colors',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/Skyleen-EI/docs-wetlify-colors',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -93,16 +91,24 @@ const config = {
       navbar: {
         title: 'Wetlify Colors',
         logo: {
+          href: 'https://colors.wetlify.com',
           alt: 'Wetlify Colors Logo',
           src: 'img/logo.svg',
         },
         items: [
+          {
+            to: '/',
+            label: 'Home',
+            position: 'left',
+            activeBaseRegex: '^/$',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Documentation',
           },
+
           // { to: '/blog', label: 'Blog', position: 'left' },
         ],
       },
@@ -144,13 +150,17 @@ const config = {
           {
             title: 'More',
             items: [
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Go to Wetlify Colors',
+                to: 'https://colors.wetlify.com',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Skyleen-EI/docs-wetlify-colors',
               },
             ],
           },

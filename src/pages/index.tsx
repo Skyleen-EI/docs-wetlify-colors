@@ -6,17 +6,18 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
+import { siteURL } from '@site/constants';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <h1
           className="hero__title"
           style={{
-            color: 'white',
+            color: 'black',
           }}
         >
           {siteConfig.title}
@@ -24,12 +25,19 @@ function HomepageHeader() {
         <p
           className="hero__subtitle"
           style={{
-            color: 'white',
+            color: '#666',
           }}
         >
           {siteConfig.tagline}
         </p>
         <div className={styles.buttons}>
+          <a
+            className="button button--primary button--lg"
+            href={siteURL}
+            target="_blank"
+          >
+            Go to the site
+          </a>
           <Link
             className="button button--secondary button--lg"
             to={`/docs/intro`}
