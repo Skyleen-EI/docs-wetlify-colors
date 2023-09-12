@@ -56,6 +56,8 @@ const config = {
     ],
   ],
 
+  // themes: ['@docusaurus/theme-search-algolia'],
+
   themeConfig: {
     algolia: {
       // The application ID provided by Algolia
@@ -64,16 +66,7 @@ const config = {
       // Public API key: it is safe to commit it
       apiKey: '4e4b7999d2497e67405b8da6d890980e',
 
-      indexName: 'colors-wetlify',
-
-      // Optional: see doc section below
-      contextualSearch: true,
-
-      // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-      replaceSearchResultPathname: {
-        from: /\/docs\//,
-        to: '/',
-      },
+      indexName: 'colors-wetlify-docs',
     },
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
