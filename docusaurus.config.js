@@ -56,122 +56,110 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // algolia: {
-      //   // The application ID provided by Algolia
-      //   appId: '',
+  themeConfig: {
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'JLZSXR1H0T',
 
-      //   // Public API key: it is safe to commit it
-      //   apiKey: '',
+      // Public API key: it is safe to commit it
+      apiKey: '4e4b7999d2497e67405b8da6d890980e',
 
-      //   indexName: 'Wetlify Colors',
+      indexName: 'colors-wetlify',
 
-      //   // Optional: see doc section below
-      //   contextualSearch: true,
+      // Optional: see doc section below
+      contextualSearch: true,
 
-      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-      //   externalUrlRegex: 'docs.colors.wetlify\\.com|wetlify\\.com',
-
-      //   // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
-      //   replaceSearchResultPathname: {
-      //     from: '/docs/', // or as RegExp: /\/docs\//
-      //     to: '/',
-      //   },
-
-      //   // Optional: Algolia search parameters
-      //   searchParameters: {},
-
-      //   // Optional: path for search page that enabled by default (`false` to disable it)
-      //   searchPagePath: 'search',
-      // },
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      navbar: {
-        title: 'Wetlify Colors',
-        logo: {
-          href: 'https://colors.wetlify.com',
-          alt: 'Wetlify Colors Logo',
-          src: 'img/logo.svg',
+      // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+      replaceSearchResultPathname: {
+        from: /\/docs\//,
+        to: '/',
+      },
+    },
+    image: 'img/docusaurus-social-card.jpg',
+    navbar: {
+      title: 'Wetlify Colors',
+      logo: {
+        href: 'https://colors.wetlify.com',
+        alt: 'Wetlify Colors Logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          to: '/',
+          label: 'Home',
+          position: 'left',
+          activeBaseRegex: '^/$',
         },
-        items: [
-          {
-            to: '/',
-            label: 'Home',
-            position: 'left',
-            activeBaseRegex: '^/$',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Documentation',
-          },
-
-          // { to: '/blog', label: 'Blog', position: 'left' },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        logo: {
-          alt: 'Wetlify Colors Logo',
-          src: 'img/logo_white.png',
-          href: 'https://colors.wetlify.com',
-          height: 51,
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Documentation',
         },
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Documentation',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
-              {
-                label: 'Go to Wetlify Colors',
-                to: 'https://colors.wetlify.com',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/Skyleen-EI/docs-wetlify-colors',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Skyleen.`,
+
+        // { to: '/blog', label: 'Blog', position: 'left' },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      logo: {
+        alt: 'Wetlify Colors Logo',
+        src: 'img/logo_white.png',
+        href: 'https://colors.wetlify.com',
+        height: 51,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Documentation',
+              to: '/docs/intro',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/docusaurus',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/docusaurus',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // },
+            {
+              label: 'Go to Wetlify Colors',
+              to: 'https://colors.wetlify.com',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/Skyleen-EI/docs-wetlify-colors',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Skyleen.`,
+    },
+    prism: {
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
+    },
+  },
 };
 
 module.exports = config;
